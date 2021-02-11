@@ -23,7 +23,7 @@
             <td class="p-2">
                 @foreach ($book->author as $author)
                     @if ($loop->last)
-                    <span>{{ $author->first_name }} {{ $author->last_name }} ({{ $author->books()->count() }})</span>
+                    <span><a href="/author/{{ $author->id }}">{{ $author->first_name }} {{ $author->last_name }} ({{ $author->books()->count() }})</a></span>
                     @else
                     <span>{{ $author->first_name }} {{ $author->last_name }} ({{ $author->books()->count() }}),</span>
                     @endif
