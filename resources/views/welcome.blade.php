@@ -13,7 +13,7 @@
         <thead>
             <tr>
                 <td class="p-4 bg-gray-200 font-bold"><a href="/?sort=title&order={{ $order }}">Book Title</a></td>
-                <td class="p-4 bg-gray-200 font-bold">Author</td>
+                <td class="p-4 bg-gray-200 font-bold"><a href="/?sort=authors&order={{ $order }}">Author</a></td>
                 <td class="p-4 bg-gray-200 font-bold text-center"><a href="/?sort=release_date&order={{ $order }}">Book Release date</a></td>
             </tr>
         </thead>
